@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite Especial</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+    }
+    .container {
+      text-align: center;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px;
+    }
+    .sim {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .nao {
+      background-color: #f44336;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Aceita ter um encontro comigo?</h1>
+    <button class="sim" onclick="responder(true)">Sim</button>
+    <button class="nao" onclick="responder(false)">Não</button>
+  </div>
+  
+  <script>
+    function responder(aceitou) {
+      if (aceitou) {
+        alert("Bem vinda ao nosso recomeço");
+      } else {
+        alert("Escolha errada");
+      }
+    }
+  </script>
+</body>
+</html>
